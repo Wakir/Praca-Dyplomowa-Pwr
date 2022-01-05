@@ -1,0 +1,74 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1637438144",
+        "python_version": "3.7.11 (default, Jul 27 2021, 09:42:29) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\maciek\\anaconda3\\envs\\mlagents-1.0.2\\Scripts\\mlagents-learn C:\\Users\\maciek\\Documents\\UnityProjects\\Praca Dyplomowa\\config\\trainer_config.yaml --run-id racingcar_23",
+        "mlagents_version": "0.16.0",
+        "mlagents_envs_version": "0.16.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.2.0",
+        "end_time_seconds": "1637438175"
+    },
+    "total": 30.814136800000004,
+    "count": 1,
+    "self": 0.1507166000000062,
+    "children": {
+        "run_training.setup": {
+            "total": 0.005345699999999898,
+            "count": 1,
+            "self": 0.005345699999999898
+        },
+        "TrainerController.start_learning": {
+            "total": 30.658074499999998,
+            "count": 1,
+            "self": 0.5090990999999931,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.8001888,
+                    "count": 1,
+                    "self": 7.8001888
+                },
+                "demo_to_buffer": {
+                    "total": 22.348786600000004,
+                    "count": 1,
+                    "self": 0.057532800000011264,
+                    "children": {
+                        "load_demonstration": {
+                            "total": 0.22417639999999928,
+                            "count": 1,
+                            "self": 0.21319169999999943,
+                            "children": {
+                                "read_file": {
+                                    "total": 0.010984699999999847,
+                                    "count": 1,
+                                    "self": 0.010984699999999847
+                                }
+                            }
+                        },
+                        "make_demo_buffer": {
+                            "total": 22.067077399999995,
+                            "count": 1,
+                            "self": 3.070117199999981,
+                            "children": {
+                                "steps_from_proto": {
+                                    "total": 18.996960200000014,
+                                    "count": 78684,
+                                    "self": 7.667217600000473,
+                                    "children": {
+                                        "_process_vector_observation": {
+                                            "total": 11.329742599999541,
+                                            "count": 629472,
+                                            "self": 11.329742599999541
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
